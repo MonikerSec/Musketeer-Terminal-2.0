@@ -1,12 +1,14 @@
 # Musketeer Terminal - The GCHS Mobile Companion
 FBLA PBL Mobile Application Development - Pre-judged Competitive Event
+
 Greenup County High School
+
 2022-2023
 
 ## Currently in development by The Three Musketeers:
-> *Ryan Triplett,*
-*Brandon Poplin,*
-*and Drew Boggs*
+> ***Ryan Triplett,***
+***Brandon Poplin,***
+***and Drew Boggs***
 
 ### Features:
 - Info about upcoming events in relation to GCHS
