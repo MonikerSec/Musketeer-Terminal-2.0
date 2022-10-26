@@ -1,9 +1,9 @@
 # Musketeer Terminal - The GCHS Mobile Companion
-FBLA PBL Mobile Application Development - Pre-judged Competitive Event
+#### FBLA PBL Mobile Application Development - Pre-judged Competitive Event
 
-Greenup County High School
+#### Greenup County High School / Greenup County ATC**
 
-2022-2023
+#### ***2022-2023***
 
 ## Currently in development by The Three Musketeers:
 > ***Ryan Triplett,***
@@ -21,5 +21,11 @@ Greenup County High School
 ### Run Instructions:
 To be included...
 
-### It's gonna be an app, and it's gonna be sexy.
+### Development Instructions: 
+To be included...
 
+### Requirements:
+Python 3.?+
+Kivy 2.1
+
+*This product is licensed under the terms of the [Mit License](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/LICENSE).*
