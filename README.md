@@ -1,7 +1,7 @@
 # Musketeer Terminal - The GCHS Mobile Companion
 #### FBLA PBL Mobile Application Development - Pre-judged Competitive Event
 
-#### Greenup County High School / Greenup County ATC**
+#### **Greenup County High School / Greenup County ATC**
 
 #### ***2022-2023***
 
