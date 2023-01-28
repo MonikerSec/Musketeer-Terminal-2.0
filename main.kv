@@ -1,0 +1,233 @@
+WindowManager:
+    LoginScreen:
+    SigninScreen:
+    HomeScreen:
+
+# Setting defaults 
+<MDLabel>:
+    font_name: 'fonts/SugarSnow'
+
+<MDTextField>:
+    font_size: sp(20)
+    width: dp(300)
+
+<MDRoundFlatButton>:
+    width: dp(60)
+    height: dp(80)
+    font_size: sp(25)
+    
+# Screen for logging in
+<LoginScreen>:
+    name: 'login'
+
+    MDBoxLayout:
+        size_hint: None, None
+        size: root.size
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        elevation: None
+        md_bg_color: [0/255, 128/255, 0/255]
+        padding: 20
+        spacing: 30
+        orientation: 'vertical'
+
+        Image:
+            source:("Musketeer_Terminal_Logo.png")
+
+        MDLabel:   
+            id: log_label
+            text: 'LOG IN'
+            font_size: 45
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y : 10
+        
+        MDTextField: 
+            id: email
+            mode: 'round'
+            hint_text: 'email address'
+            icon_right: 'account'
+            size_hint_x: None
+            pos_hint: {'center_x': .5}
+
+        MDTextField:
+            id: password
+            mode: 'round'
+            hint_text: 'password'
+            icon_right: 'eye-off'
+            size_hint_x: None
+            pos_hint: {'center_x': .5}
+            password: True
+
+        MDRoundFlatButton:
+            text: 'SIGN IN'
+            pos_hint: {'center_x': 0.5}
+            size_hint: None, None
+            on_release: 
+                app.login(email.text, password.text)
+                if app.logged_in == True:\
+                app.root.current = 'home'
+
+        MDRoundFlatButton:
+            text: "Don't Have An Account? Sign Up"
+            pos_hint: {'center_x': 0.5}
+            size_hint: None, None
+            on_release: 
+                app.root.current = 'signup'
+                root.manager.transition.direction = 'left'
+
+# Screen for signing in
+<SigninScreen>:
+    name: 'signup'
+    MDBoxLayout:
+        size_hint: None, None
+        size: root.size
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        elevation: None
+        md_bg_color: [0/255, 128/255, 0/255]
+        padding: 20
+        spacing: 30
+        orientation: 'vertical'
+
+        Image:
+            source:("Musketeer_Terminal_Logo.png")
+
+        MDLabel:
+            text: 'SIGN UP'
+            font_size: 45
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y : 10
+        
+        MDTextField: 
+            id: sign_email
+            mode: 'round'
+            hint_text: 'username'
+            icon_right: 'account'
+            size_hint_x: None
+            pos_hint: {'center_x': .5}
+
+        MDTextField:
+            id: sign_pass
+            mode: 'round'
+            hint_text: 'password'
+            icon_right: 'eye-off'
+            size_hint_x: None
+            pos_hint: {'center_x': .5}
+            password: True
+
+        MDRoundFlatButton:
+            text: 'SIGN UP'
+            pos_hint: {'center_x': 0.5}
+            size_hint: None, None
+            on_release: 
+                app.CheckForExistingUser(sign_email.text, sign_pass.text)
+                if app.new_user == True:\
+                app.signup(sign_email.text, sign_pass.text)
+                app.root.current = 'home' if app.new_user else 'login'
+
+        MDRoundFlatButton:
+            text: "Go Back To Log In"
+            pos_hint: {'center_x': 0.5}
+            size_hint: None, None
+            on_release: 
+                app.root.current = 'login'
+                root.manager.transition.direction = 'right'
+
+# Home Screen
+<HomeScreen>:
+    name: 'home'
+
+    MDRelativeLayout:
+        cols: 2
+        col_default_width: root.width
+        md_bg_color: [0/255, 128/255, 0/255]
+
+        MDLabel:
+            text: 'Choose The Screen You Would Like to View'
+            font: 'fonts/Minecraft.ttf'
+            font_size: 24
+            pos_hint: {'center_x': .5, 'center_y': .95}
+            size_hint_x: None
+            width: root.width
+            halign: 'center'
+            valign: 'bottom'
+
+
+        MDCard:
+            md_bg_color: 1,1,1,1 
+            padding: 4
+            elevation: 5
+            size_hint: .4,.4
+            pos_hint: {"center_x": .25, "center_y": .7}
+
+            BoxLayout:
+                md_bg_color:
+
+                MDLabel: 
+                    text: 'Balls'
+                    
+
+        MDCard:
+            md_bg_color: 1,1,1,1 
+            padding: 4
+            elevation: 5
+            size_hint: .4,.4
+            pos_hint: {"center_x": .25, "center_y": .25}
+        MDCard:
+            md_bg_color: 1,1,1,1 
+            padding: 4
+            elevation: 5
+            size_hint: .4,.4
+            pos_hint: {"center_x": .75, "center_y": .7}
+        MDCard:
+            md_bg_color: 1,1,1,1 
+            padding: 4
+            elevation: 5
+            size_hint: .4,.4
+            pos_hint: {"center_x": .75, "center_y": .25}
+
+            BoxLayout:
+                Button:
+        
+
+
+    # MDRelativeLayout:
+    #     cols: 2
+    #     col_default_width: root.width
+    #     md_bg_color: [0/255, 128/255, 0/255]
+        
+    #     MDLabel: 
+    #         text: 'Select What You Would Like to See'
+    #         size_hint: None, None
+    #         width: dp(200)
+    #         height: dp(25)
+    #         font_size: sp(32)
+    #         pos_hint: {'center_x': .5, 'center_y': .9}
+
+    #     MDCard:
+    #         md_bg_color: 1,1,1,1 
+    #         padding: 4
+    #         elevation: 5
+    #         size_hint: .4,.4
+    #         pos_hint: {"center_x": .25, "center_y": .7}
+
+    #     MDCard:
+    #         md_bg_color: 1,1,1,1 
+    #         padding: 4
+    #         elevation: 5
+    #         size_hint: .4,.4
+    #         pos_hint: {"center_x": .25, "center_y": .25}
+    #     MDCard:
+    #         md_bg_color: 1,1,1,1 
+    #         padding: 4
+    #         elevation: 5
+    #         size_hint: .4,.4
+    #         pos_hint: {"center_x": .75, "center_y": .7}
+    #     MDCard:
+    #         md_bg_color: 1,1,1,1 
+    #         padding: 4
+    #         elevation: 5
+    #         size_hint: .4,.4
+    #         pos_hint: {"center_x": .75, "center_y": .25}

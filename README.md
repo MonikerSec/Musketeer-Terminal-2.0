@@ -1,7 +1,7 @@
 # Musketeer Terminal - The GCHS Mobile Companion
 #### FBLA PBL Mobile Application Development - Pre-judged Competitive Event
 
-#### Greenup County High School / Greenup County ATC**
+#### **Greenup County High School / Greenup County ATC**
 
 #### ***2022-2023***
 
@@ -20,12 +20,14 @@
 
 ### Run Instructions:
 To be included...
+*App size is scaled to phone*
 
 ### Development Instructions: 
 To be included...
 
 ### Requirements:
-Python 3.?+
+Python 3.8+
 Kivy 2.1
+KivyMD 1.1.0
 
 *This product is licensed under the terms of the [Mit License](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/LICENSE).*
