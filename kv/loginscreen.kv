@@ -1,0 +1,68 @@
+<LoginScreen>:
+    MDBoxLayout:
+        size_hint: None, None
+        size: root.size
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        elevation: None
+        md_bg_color: [0/255, 128/255, 0/255]
+        padding: 20
+        spacing: 30
+        orientation: 'vertical'
+
+        Image:
+            source:("images/musk-term-logo.png")
+
+        MDLabel:   
+            id: log_label
+            text: 'LOG IN'
+            font_size: 45
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y : 10
+        
+        MDTextField: 
+            id: email
+            mode: 'round'
+            hint_text: 'username'
+            icon_right: 'account'
+            size_hint_x: None
+            pos_hint: {'center_x': .5}
+
+        MDTextField:
+            id: password
+            mode: 'round'
+            hint_text: 'password'
+            icon_right: 'eye-off'
+            size_hint_x: None
+            pos_hint: {'center_x': .5}
+            password: True
+
+        MDRoundFlatButton:
+            text: 'SIGN IN'
+            pos_hint: {'center_x': 0.5}
+            size_hint: None, None
+            on_release:
+                sign_snack = Snackbar(
+                text='[color=#000000]You Have Been Signed In![/color]',
+                font_size=sp(20),
+                duration=1.5,
+                snackbar_y=dp(10),
+                snackbar_x=dp(10),
+                size_hint_x = .95,
+                pos_hint={'center_x': .5})
+
+                app.login(email.text, password.text)
+                app.root.transition = RiseInTransition(duration=.5)
+                if app.logged_in == True:\
+                app.root.current = 'home'
+                if app.logged_in == True:\
+                sign_snack.open()
+
+        MDRoundFlatButton:
+            text: "No Account? Sign Up"
+            pos_hint: {'center_x': 0.5}
+            size_hint: None, None
+            on_release: 
+                app.root.transition = SlideTransition(direction='left')
+                app.root.current = 'signup'

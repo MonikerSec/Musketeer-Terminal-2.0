@@ -1,0 +1,45 @@
+<CalendarScreen>:
+    
+    MDFloatLayout:
+        md_bg_color: [0/255, 128/255, 0/255]
+
+        Image: 
+            source: 'images/musk-term-logo.png'
+            size_hint: .8,.8
+            pos_hint: {'center_x': .5, 'center_y': .8}
+
+        MDLabel: 
+            text: 'Musketeer Calendar Will Be Available Soon!\nPlease Show Us Your Patience.'
+            size_hint: .95, .95
+            font_name: 'fonts/LilacSmile.ttf'
+            font_size: sp(26)
+            pos_hint: {'center_x': .5, 'center_y': .48}
+            halign: 'center'
+
+        MDLabel: 
+            text: '-Three Musketeers (App Devs)'
+            font_name: 'fonts/LilacSmile.ttf'
+            font_size: sp(25)
+            pos_hint: {'center_x': .5, 'center_y': .3}
+            halign: 'center'
+
+        MDRoundFlatButton:
+            text: 'Return Back To Home'
+            pos_hint: {'center_x': .5, 'center_y': .18}
+            size_hint: (.6, .08)
+            font_name: 'fonts/SugarSnow.ttf'
+            text_size: sp(20)
+            on_press:
+                soon_snack = Snackbar(
+                text='[color=#000000]Calendar Will Be Available Soon.[/color]',
+                font_size=sp(18),
+                snackbar_y=dp(10),
+                snackbar_x=sp(10),
+                size_hint_x = .95,
+                pos_hint={'center_x': .5}) 
+
+                app.root.transition = WipeTransition(duration=.5)
+                app.root.current = 'home'
+                soon_snack.open()
+
+            

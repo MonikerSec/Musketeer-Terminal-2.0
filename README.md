@@ -19,15 +19,12 @@
 - Report bug function
 
 ### Run Instructions:
-To be included...
-*App size is scaled to phone*
+
 
 ### Development Instructions: 
 To be included...
 
 ### Requirements:
-Python 3.8+
-Kivy 2.1
-KivyMD 1.1.0
+*[Requirements](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/requirements.txt)*
 
 *This product is licensed under the terms of the [Mit License](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/LICENSE).*

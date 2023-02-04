@@ -1,0 +1,46 @@
+<AboutScreen>:
+    MDFloatLayout:
+        md_bg_color: [0, 128/255, 0]
+
+        MDRaisedButton: 
+            text: '<<Go back'
+            font_size: sp(24)
+            size_hint: .1, .05
+            pos_hint: {'center_x': 0.17, 'center_y': 0.94}
+            on_press:
+                app.root.transition = WipeTransition(duration=.4)
+                root.manager.current = 'home'
+        
+        MDLabel:
+            text: 'This app was created by:\nRyan Triplett\nBrandon Poplin\nDrew Boggs\nFor FBLA 2022-2023'
+            halign: 'center'
+            font_name: 'fonts/abel.ttf'
+            font_size: sp(24)
+            pos_hint: {'center_x': .5, 'center_y': .765}
+
+        MDBoxLayout:
+            orientation: 'horizontal'
+            pos_hint: {'center_x': .5, 'center_y': .48}
+            size_hint: (.98, .65)
+            spacing: 4
+
+            Image:
+                source: 'images/Ryan.jpg'
+            Image: 
+                source: 'images/Brandon.jpg'
+            Image: 
+                source: 'images/Drew.jpg'
+
+        MDLabel: 
+            text: 'Left to right: Ryan, Brandon, Drew'
+            halign: 'center'
+            font_name: 'fonts/Abel.ttf'
+            font_size: sp(18)
+            pos_hint: {'center_x': .5, 'center_y': .32}
+            
+        MDLabel: 
+            text:'This product is licensed under terms of the MIT License\nSee Github page for more information.'
+            halign: 'center'
+            font_name: 'fonts/Aaargh.ttf'
+            font_size: sp(22)
+            pos_hint: {'center_x': .5, 'center_y': .15}

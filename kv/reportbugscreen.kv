@@ -1,0 +1,143 @@
+<ReportBugScreen>:
+    MDFloatLayout:
+        md_bg_color: (0/255, 128/255, 0/255)
+        Image: 
+            source: 'images/musk-term-logo.png'
+            size_hint: .45, .45
+            pos_hint: {'center_x': .5, 'center_y': .85}
+        MDRaisedButton: 
+            text: '<<Go back'
+            font_size: sp(24)
+            size_hint: .1, .05
+            pos_hint: {'center_x': 0.17, 'center_y': 0.94}
+            on_press: 
+                app.root.transition = WipeTransition(duration=.4) 
+                root.manager.current = 'home'
+
+        MDFloatLayout: 
+            size_hint: .9, .09
+            pos_hint: {'center_x': .5, 'center_y': .685}
+            canvas:
+                Color: 
+                    rgb: 1,1,1,1
+                RoundedRectangle: 
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+            canvas.before: 
+                Color: 
+                    rgb: 230/255, 230/255, 1
+                Line:
+                    width: 2
+                    rounded_rectangle: self.x, self.y, self.width, self.height, 6, 6, 6, 6, 100
+            TextInput: 
+                id: name
+                hint_text: "Name"
+                size_hint: 1, None
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                height: self.minimum_height
+                multiline: False
+                font_name: 'fonts/SugarSnow'
+                font_size: sp(24)
+                background_color: 1, 1, 1, 0
+                hint_text_color: 170/255, 170/255, 177/255, 1
+                padding: 13
+                cursor_color: 0, 0, 0, 1
+
+        MDFloatLayout: 
+            size_hint: .9, .09
+            pos_hint: {'center_x': .5, 'center_y': .557}
+            canvas:
+                Color: 
+                    rgb: 1,1,1,1
+                RoundedRectangle: 
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+            canvas.before: 
+                Color: 
+                    rgb: 230/255, 230/255, 1
+                Line:
+                    width: 2
+                    rounded_rectangle: self.x, self.y, self.width, self.height, 6, 6, 6, 6, 100
+            TextInput: 
+                id: email
+                hint_text: "Email"
+                size_hint: 1, None
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                height: self.minimum_height
+                multiline: False
+                font_name: 'fonts/SugarSnow'
+                font_size: sp(24)
+                background_color: 1, 1, 1, 0
+                hint_text_color: 170/255, 170/255, 177/255, 1
+                padding: 13
+                cursor_color: 0, 0, 0, 1
+
+        MDFloatLayout: 
+            size_hint: .9, .28
+            pos_hint: {'center_x': .5, 'center_y': .335}
+            canvas:
+                Color: 
+                    rgb: 1,1,1,1
+                RoundedRectangle: 
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+            canvas.before: 
+                Color: 
+                    rgb: 230/255, 230/255, 1
+                Line:
+                    width: 2
+                    rounded_rectangle: self.x, self.y, self.width, self.height, 6, 6, 6, 6, 100
+            TextInput: 
+                id: message
+                hint_text: "Message"
+                size_hint: 1, None
+                pos_hint: {'center_x': .5, 'center_y': .8}
+                height: self.minimum_height
+                font_name: 'fonts/SugarSnow'
+                font_size: sp(24)
+                background_color: 1, 1, 1, 0
+                hint_text_color: 170/255, 170/255, 177/255, 1
+                padding: 10
+                cursor_color: 0, 0, 0, 1
+        Button:
+            text: 'Send'
+            font_name: 'fonts/SugarSnow.ttf'
+            font_size: sp(24)
+            size_hint: .9, .09
+            pos_hint: {'center_x': .5, 'center_y': .1}
+            background_color: 1, 1, 1, 0
+            color: 1, 1, 1, 1
+            on_release:
+                app.send_bug(name, email, message)
+
+                bug_snack = Snackbar(
+                text='[color=#000000]Bug Has Been Reported![/color]',
+                font_size=sp(18),
+                snackbar_y=dp(10),
+                snackbar_x=dp(10),
+                size_hint_x = .95,
+                pos_hint={'center_x': .5})
+
+                no_bug_snack = Snackbar(
+                text='[color=#000000]Err: Bug Not Reported.[/color]',
+                font_size=sp(18),
+                snackbar_y=dp(10),
+                snackbar_x=dp(10),
+                size_hint_x = .95,
+                pos_hint={'center_x': .5})
+
+                if app.bug_sent == True:\
+                bug_snack.open()
+                if app.bug_sent == False:\
+                no_bug_snack.open()
+
+            canvas.before: 
+                Color:
+                    rgb: 71/255, 104/255, 237/255, 1
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
