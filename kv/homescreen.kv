@@ -1,0 +1,108 @@
+<HomeScreen>:
+    MDRelativeLayout:
+        cols: 2
+        col_default_width: root.width
+        md_bg_color: [0/255, 128/255, 0/255]
+
+        MDLabel:
+            text: 'Choose The Screen You Would Like to View'
+            font_name: 'fonts/Minecraft.ttf'
+            font_size: 24
+            pos_hint: {'center_x': .5, 'center_y': .95}
+            size_hint_x: None
+            width: root.width
+            halign: 'center'
+            valign: 'bottom'
+
+        MDCard:
+            padding: 4
+            elevation: 5
+            size_hint: .4,.4
+            pos_hint: {"center_x": .25, "center_y": .7}
+
+            MDRelativeLayout:
+                Image:
+                    source: 'images/calendar.png'
+                    pos_hint: {'center_x': .5, 'center_y': .6}
+                    size_hint: .8, .8
+
+                MDFlatButton:
+                    text: 'Calendar'
+                    theme_text_color: 'Custom'
+                    text_color: 'black'
+                    size_hint: 1, .2
+                    font_size: (self.width/7)
+                    pos_hint: {'center_x': .5, 'center_y': .15}
+                    on_release: 
+                        app.root.transition = SwapTransition(duration=.5)
+                        app.root.current = 'calendar'
+                    
+        MDCard:
+            padding: 4
+            elevation: 5
+            size_hint: .4,.4
+            pos_hint: {"center_x": .25, "center_y": .25}
+
+            MDRelativeLayout: 
+                Image:
+                    source: 'images/info.png'
+                    pos_hint: {'center_x': .5, 'center_y': .6}
+                    size_hint: .9, .9
+
+                MDFlatButton:
+                    text: 'About Us'
+                    theme_text_color: 'Custom'
+                    text_color: 'black'
+                    size_hint: 1, .2
+                    font_size: (self.width / 7)
+                    pos_hint: {'center_x': .5, 'center_y': .15}
+                    on_release: 
+                        app.root.transition = SwapTransition(duration=.5)
+                        app.root.current = 'about'
+
+
+        MDCard:
+            padding: 4
+            elevation: 5
+            size_hint: .4, .4
+            pos_hint: {"center_x": .75, "center_y": .7}
+
+            MDRelativeLayout:
+                Image:
+                    source: 'images/mail.png'
+                    pos_hint: {'center_x': .5, 'center_y': .57}
+                    size_hint: 1.25, 1.25
+
+                MDFlatButton:
+                    text: 'Email'
+                    theme_text_color: 'Custom'
+                    text_color: 'black'
+                    size_hint: 1, .2
+                    font_size: (self.width / 7)
+                    pos_hint: {'center_x': .5, 'center_y': .15}
+                    on_release: 
+                        app.root.transition = SwapTransition(duration=.5)
+                        app.root.current = 'email'
+
+        MDCard:
+            padding: 4
+            elevation: 5
+            size_hint: .4,.4
+            pos_hint: {"center_x": .75, "center_y": .25}
+
+            MDRelativeLayout:
+                Image:
+                    source: 'images/bug-icon.png'
+                    pos_hint: {'center_x': .5, 'center_y': .6}
+                    size_hint: .7, .7
+
+                MDFlatButton:
+                    text: 'Report Bug'
+                    theme_text_color: 'Custom'
+                    text_color: 'black'
+                    size_hint: 1, .2
+                    font_size: (self.width / 7)
+                    pos_hint: {'center_x': .5, 'center_y': .15}
+                    on_release:
+                        app.root.transition = SwapTransition(duration=.5)
+                        app.root.current = 'bug'

@@ -1,0 +1,76 @@
+#: import SlideTransition kivy.uix.screenmanager.SlideTransition
+#: import WipeTransition kivy.uix.screenmanager.WipeTransition
+#: import SwapTransition kivy.uix.screenmanager.SwapTransition
+#: import RiseInTransition kivy.uix.screenmanager.RiseInTransition
+#: import MDScrollView kivy.uix.scrollview
+#: import MDList kivymd.uix.list
+#: import MDSwiper kivymd.uix.swiper
+#: import Snackbar kivymd.uix.snackbar.Snackbar
+#: import Clock kivy.clock
+
+# Adding screens from separate files
+#: include kv/aboutscreen.kv
+#: include kv/emailscreen.kv
+#: include kv/reportbugscreen.kv
+#: include kv/splashscreen.kv
+#: include kv/homescreen.kv
+#: include kv/loginscreen.kv
+#: include kv/calendarscreen.kv
+#: include kv/signupscreen.kv
+
+# Initializing screens
+WindowManager:
+    SplashScreen:
+    LoginScreen:
+    SignupScreen:
+    HomeScreen:
+    ReportBugScreen:
+    EmailScreen:
+    AboutScreen:
+    CalendarScreen:
+
+# Setting defaults 
+<MDLabel>:
+    font_name: 'fonts/SugarSnow'
+
+<MDTextField>:
+    font_size: sp(20)
+    width: dp(300)
+
+<MDRoundFlatButton>:
+    width: dp(60)
+    height: dp(80)
+    font_size: sp(25)
+
+<MDCard>
+    md_bg_color: 255/255, 221/255, 0/255
+<SwiperItem@MDSwiperItem>:
+    FitImage:
+        source: 'images/musk-term-logo.png'
+<SplashScreen>:
+    name: 'splash'
+# Screen for logging in
+<LoginScreen>:
+    name: 'login'
+# Screen for signing up
+<SignupScreen>:
+    name: 'signup'
+# Home Screen
+<HomeScreen>:
+    name: 'home'
+
+# Send Emails 
+<EmailScreen>:
+    name: 'email'
+
+# Report Bugs
+<ReportBugScreen>:
+    name: 'bug'
+
+# See about info
+<AboutScreen>:
+    name: 'about'
+
+# View The Calendar
+<CalendarScreen>:
+    name: 'calendar'
