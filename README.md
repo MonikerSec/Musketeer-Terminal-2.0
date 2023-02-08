@@ -19,7 +19,7 @@
 - Report bug function
 
 ### Run Instructions:
-https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=0ea736ee66e8edb31743861fe4cae21d0dc86708d92bec715ae1e1d8b56a2022
+https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=926b026b8729ad5cd7cb181a5c988f235d8f1edf2f6429d7bce546bfd2d67440
 
 ### Development Instructions: 
 To be included...
