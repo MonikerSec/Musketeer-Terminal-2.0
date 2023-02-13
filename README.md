@@ -19,7 +19,13 @@
 - Report bug function
 
 ### Run Instructions:
-https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=7099a6eb680c23b44e83a7baf8fd0b9bf5b952d88e332ff3fa1bd7e426a2d587]
+1) Go to settings in your android phone, and find "security"
+2) Click on security and check the option "unknown sources"
+3) Tap OK in the prompt message
+4) Select "trust"
+5) Follow the link below and download the APK file
+6) Make sure to allow the download and then run the application
+*[Download App](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=caf6f6c76ecf9453904883cc74a2291d5ad36d8728c934a69652318ffa9cedd2)*
 
 ### Development Instructions: 
 To be included...
