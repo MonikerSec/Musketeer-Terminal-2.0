@@ -25,7 +25,7 @@
 4) Select "trust"
 5) Follow the link below and download the APK file
 6) Make sure to allow the download and then run the application
-*[Download App](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=caf6f6c76ecf9453904883cc74a2291d5ad36d8728c934a69652318ffa9cedd2)*
+*[Download App](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=950fbddd711c7117fed23556d27df5567f978643dc5534ab04d497f64fd8afa8)*
 
 ### Development Instructions: 
 To be included...
