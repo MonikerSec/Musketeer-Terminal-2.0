@@ -27,6 +27,9 @@
 6) Make sure to allow the download and then run the application
 *[Download App](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=950fbddd711c7117fed23556d27df5567f978643dc5534ab04d497f64fd8afa8)*
 
+*Phone must be connected to the internet in order to log in and/or sign up.*
+*There is a known bug in some phone models that messes up the centering of the application, please note that this is being worked on and will be fixed in the near future.*
+
 ### Development Instructions: 
 To be included...
 
