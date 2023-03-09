@@ -29,6 +29,7 @@
 
 *Phone must be connected to the internet in order to log in and/or sign up.*
 *There is a known bug in some phone models that messes up the centering of the application, please note that this is being worked on and will be fixed in the near future.*
+*If the application does not center on your screen, reload the app until it does.*
 
 ### Development Instructions: 
 To be included...
