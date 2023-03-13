@@ -34,8 +34,17 @@
 *There is a known bug in some phone models that messes up the centering of the application. Please note that this is being worked on and will be fixed in the near future.*
 *If the application does not center on your screen, reload the app until it does.*
 
-### Development Instructions: 
-To be included...
+### Development Instructions:
+#### Linux:
+1) Go to desired IDE such as VSCode, Atom, Pycharm, etc.
+2) Open new folder
+3) Make sure your current terminal directory is your current folder. If it is not, type in *cd <folder name>*
+4) The Python package manager, Pip, should come pre-installed on your system. If it is not, type *sudo apt install pip* and if that doesn't work try one of the following commands: *sudo pacman -S python-pip*, *npm i pip*
+4) Type into your terminal *git clone https://github.com/rymantheman/musketeer-terminal-2.0*
+5) Type *cd musketeer-terminal-2.0*
+6) You will now have access to all files in the project, in order to be able to run the application, The requirements must be installed.
+7) To install the requirements type *sudo pip install -r requirements.txt*
+8) The correct python-firebase package also needs to be installed. In order to do this, type in *sudo apt install 
 
 ### Requirements:
 *[Requirements](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/requirements.txt)*
