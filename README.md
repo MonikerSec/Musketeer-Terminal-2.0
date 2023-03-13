@@ -10,6 +10,9 @@
 ***Brandon Poplin,***
 ***and Drew Boggs***
 
+## This application was developed for use on Android smartphones ONLY. You can not run the application on Windows, Linux, iOS, etc. 
+## The FBLA mobile application development guidelines state that the application must only be designed for a singular platform. 
+
 ### Features:
 - Info about upcoming events in relation to GCHS
 - School calendar
@@ -28,7 +31,7 @@
 *[Download App](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=950fbddd711c7117fed23556d27df5567f978643dc5534ab04d497f64fd8afa8)*
 
 *Phone must be connected to the internet in order to log in and/or sign up.*
-*There is a known bug in some phone models that messes up the centering of the application, please note that this is being worked on and will be fixed in the near future.*
+*There is a known bug in some phone models that messes up the centering of the application. Please note that this is being worked on and will be fixed in the near future.*
 *If the application does not center on your screen, reload the app until it does.*
 
 ### Development Instructions: 
