@@ -10,8 +10,8 @@
 ***Brandon Poplin,***
 ***and Drew Boggs***
 
-## This application was developed for use on Android smartphones ONLY. You can not run the application on Windows, Linux, iOS, etc. 
-## The FBLA mobile application development guidelines state that the application must only be designed for a singular platform. 
+### This application was developed for use on Android smartphones ONLY. You can not run the application on Windows, Linux, iOS, etc. 
+### The FBLA mobile application development guidelines state that the application must only be designed for a singular platform. 
 
 ### Features:
 - Info about upcoming events in relation to GCHS
