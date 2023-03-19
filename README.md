@@ -22,20 +22,20 @@
 - Report bug function
 
 ### Application Download And Run Instructions:
+*Phone must be connected to the internet in order to log in and/or sign up.*
+*There is a known bug in some phone models that messes up the centering of the application. Please note that this is being worked on and will be fixed in the near future.*
+*If the application does not center on your screen, reload the app until it does.*
+
 #### This application runs exclusively on Android based phones and will not work on other OS's.
 1) Open this Github page and Readme file on your android phone. 
 2) Go to settings in your Android phone and find 'security' (could also be 'password and security')
-3) On some phones this will take you straight to system security and some take an extra click to get to it. Whatever way your phone is, just make sure that you make it to 'system security'.
+3) On some phones this will take you straight to system security and some take an extra click to get to it. Whichever way your phone is, just make sure that you make it to 'system security'.
 4) Click on 'installation sources' and check every option to allow application installation from any source.
 5) Follow *[this link](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=950fbddd711c7117fed23556d27df5567f978643dc5534ab04d497f64fd8afa8)* and download the APK file (Downloading may take a while).
 6) Once the APK has downloaded, find it in your file explorer app (most common for android phones is 'Files By Google').
 7) Tap on the file and you will be met with a prompt to install the app. This prompt varies from phone to phone, make sure to allow and trust the installation of the app. 
-8) The app has now been successfully installed onto your smartphone. 
+8) The app has now been successfully installed onto your smartphone and is ready to open. 
 9) If you would like to view the code in an IDE or run the application in a computer window, then follow the instructions below. 
-
-*Phone must be connected to the internet in order to log in and/or sign up.*
-*There is a known bug in some phone models that messes up the centering of the application. Please note that this is being worked on and will be fixed in the near future.*
-*If the application does not center on your screen, reload the app until it does.*
 
 ### Opening Code in editor and running the application in a computer window:
 #### Linux:
