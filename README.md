@@ -55,4 +55,5 @@
 ### Requirements:
 *[Requirements](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/requirements.txt)*
 
+### Licensing:
 *This product is licensed under the terms of the [Mit License](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/LICENSE).*
