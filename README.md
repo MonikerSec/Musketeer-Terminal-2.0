@@ -34,17 +34,20 @@
 *There is a known bug in some phone models that messes up the centering of the application. Please note that this is being worked on and will be fixed in the near future.*
 *If the application does not center on your screen, reload the app until it does.*
 
-### Development Instructions:
+### Opening Code in editor and running the application in a computer window:
 #### Linux:
-1) Go to desired IDE such as VSCode, Atom, Pycharm, etc.
-2) Open new folder
-3) Make sure your current terminal directory is your current folder. If it is not, type in *cd <folder name>*
-4) The Python package manager, Pip, should come pre-installed on your system. If it is not, type *sudo apt install pip* and if that doesn't work try one of the following commands: *sudo pacman -S python-pip*, *npm i pip*
-4) Type into your terminal *git clone https://github.com/rymantheman/musketeer-terminal-2.0*
-5) Type *cd musketeer-terminal-2.0*
-6) You will now have access to all files in the project, in order to be able to run the application, The requirements must be installed.
-7) To install the requirements type *sudo pip install -r requirements.txt*
-8) The correct python-firebase package also needs to be installed. In order to do this, type in *sudo apt install 
+1) Open your terminal
+2) The Python package manager, Pip, should come pre-installed on your system. If it is not, type *sudo apt install pip* and if that doesn't work try one of the following commands: *sudo pacman -S python-pip*, *npm i pip*
+3) Type into your terminal *git clone https://github.com/rymantheman/musketeer-terminal-2.0*
+4) A new folder will be created once the previous command finishes. It will be called Musketeer-Terminal-2.0.
+5) open your desired IDE such as VSCode, Atom, Pycharm, etc. (preferably VSCode but any IDE is acceptable).
+6) Find the button that says 'open folder', which is most likely under the 'file' tab.
+7) Open the 'Musketeer-Terminal-2.0' folder 
+7) You will now have access to all files in the project, in order to be able to run the application, The requirements must be installed.
+8) To install the requirements type *sudo pip install -r requirements.txt*
+9) The correct python-firebase package also needs to be installed. In order to do this, type in *pip install git+https://github.com/ozgur/python-firebase*
+10) Make sure the python interpreter and the extensions needed to run python files are installed in your IDE.
+10) At this point everything should be working correctly, navigate to the main.py file and press run. You will see the application come up in a window. This is the exact application that will be on Android phones. Everythig should work correctly as long as you have a working internet connection. 
 
 ### Requirements:
 *[Requirements](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/requirements.txt)*
