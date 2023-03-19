@@ -45,7 +45,7 @@
 7) Open the 'Musketeer-Terminal-2.0' folder 
 7) You will now have access to all files in the project, in order to be able to run the application, The requirements must be installed.
 8) To install the requirements type *sudo pip install -r requirements.txt*
-9) The correct python-firebase package also needs to be installed. In order to do this, type in *pip install git+https://github.com/ozgur/python-firebase*
+9) The correct python-firebase package also needs to be installed. In order to do this, type in '*pip install git+https://github.com/ozgur/python-firebase*'
 10) Make sure the python interpreter and the extensions needed to run python files are installed in your IDE.
 10) At this point everything should be working correctly, navigate to the main.py file and press run. You will see the application come up in a window. This is the exact application that will be on Android phones. Everythig should work correctly as long as you have a working internet connection. 
 
