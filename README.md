@@ -21,7 +21,7 @@
 - Sign-up/log-in function
 - Report bug function
 
-### Run Instructions:
+### Application Download And Run Instructions:
 1) Go to settings in your android phone, and find "security"
 2) Click on security and check the option "unknown sources"
 3) Tap OK in the prompt message
