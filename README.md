@@ -11,7 +11,7 @@
 ***and Drew Boggs***
 
 ### This application was developed for use on Android smartphones ONLY. You can not run the application on Windows, Linux, iOS, etc. 
-### The FBLA mobile application development guidelines state that the application must only be designed for a singular platform. 
+### The FBLA mobile application development guidelines state that the application does not have to be universal and the developer can choose to use a singular platform (in our case Android).
 
 ### Features:
 - Info about upcoming events in relation to GCHS
