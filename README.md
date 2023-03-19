@@ -10,16 +10,21 @@
 ***Brandon Poplin,***
 ***and Drew Boggs***
 
+## Our Individual Contributions:
+***Ryan*** - Primary Programmer
+***Brandon*** - Secondary Programmer + Graphic Designer
+***Drew*** - Team/Workload Manager + Secondary Graphic Designer
+
 ### This application was developed for use on Android smartphones ONLY. You can not run the application on Windows, Linux, iOS, etc. 
 ### The FBLA mobile application development guidelines state that the application does not have to be universal and the developer can choose to use a singular platform (in our case Android).
+### The link to the application download website is below in the 'Application Download and Run Instructions.'
 
 ### Features:
-- Info about upcoming events in relation to GCHS
-- School calendar
-- Student-to-teacher photo sharing 
-- Parent-to-school messaging/notification system
-- Sign-up/log-in function
-- Report bug function
+- Sign-up/log-in function.
+- Person-To-Person email system.
+- Report Bug Function
+- School calendar (coming soon)
+- Info about upcoming events in relation to GCHS (coming soon along with calendar).
 
 ### Application Download And Run Instructions:
 *Phone must be connected to the internet in order to log in and/or sign up.*
