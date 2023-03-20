@@ -26,7 +26,7 @@
 - School calendar (coming soon)
 - Info about upcoming events in relation to GCHS (coming soon along with calendar).
 
-### Application Download And Run Instructions:
+### Application Download And Run Instructions - Android:
 *Phone must be connected to the internet in order to log in and/or sign up.*
 *There is a known bug in some phone models that messes up the centering of the application. Please note that this is being worked on and will be fixed in the near future.*
 *If the application does not center on your screen, reload the app until it does.*
