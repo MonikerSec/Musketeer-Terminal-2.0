@@ -46,7 +46,7 @@
 #### Linux:
 1) Open your terminal
 2) The Python package manager, Pip, should come pre-installed on your system. If it is not, type *sudo apt install pip* and if that doesn't work try one of the following commands: *sudo pacman -S python-pip*, *npm i pip*
-3) Type into your terminal *git clone https://github.com/rymantheman/musketeer-terminal-2.0*
+3) Type into your terminal '*git clone https://github.com/rymantheman/musketeer-terminal-2.0*'
 4) A new folder will be created once the previous command finishes. It will be called Musketeer-Terminal-2.0.
 5) open your desired IDE such as VSCode, Atom, Pycharm, etc. (preferably VSCode but any IDE is acceptable).
 6) Find the button that says 'open folder', which is most likely under the 'file' tab.
