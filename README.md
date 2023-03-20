@@ -36,7 +36,7 @@
 2) Go to settings in your Android phone and find 'security' (could also be 'password and security')
 3) On some phones this will take you straight to system security and some take an extra click to get to it. Whichever way your phone is, just make sure that you make it to 'system security'.
 4) Click on 'installation sources' and check every option to allow application installation from any source.
-5) Still on phone, follow *[this link](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=950fbddd711c7117fed23556d27df5567f978643dc5534ab04d497f64fd8afa8)* and download the APK file (Downloading may take a while).
+5) Still on phone, follow *[this link](https://apkfab.com/musketeer-terminal/org.test.musketeerterminal/apk?h=e3b7ed4493abea6311b679666d00b65892e506c0dc54e71c21b4da709e19aef7)* and download the APK file (Downloading may take a while).
 6) Once the APK has downloaded, find it in your file explorer app (most common for android phones is 'Files By Google').
 7) Tap on the file and you will be met with a prompt to install the app. This prompt varies from phone to phone, make sure to allow and trust the installation of the app. 
 8) The app has now been successfully installed onto your smartphone and is ready to open. 
