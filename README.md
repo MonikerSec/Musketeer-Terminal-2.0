@@ -57,7 +57,7 @@
 10) Make sure the python interpreter and the extensions needed to run python files are installed in your IDE.
 10) At this point everything should be working correctly, navigate to the main.py file and press run. You will see the application come up in a window. This is the exact application that will be on Android phones. Everything should work correctly as long as you have a working internet connection. 
 
-### Requirements:
+### Requirements to Develop:
 *[Requirements](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/requirements.txt)*
 
 ### Licensing:
