@@ -40,32 +40,7 @@
 6) Once the APK has downloaded, find it in your file explorer app (most common for android phones is 'Files By Google').
 7) Tap on the file and you will be met with a prompt to install the app. This prompt varies from phone to phone, make sure to allow and trust the installation of the app. 
 8) The app has now been successfully installed onto your smartphone and is ready to open. 
-9) If you would like to view the code in an IDE or run the application in a computer window, then follow the instructions below. 
-
-### Opening Code in editor and running the application in a computer window:
-#### Linux:
-1) Open your terminal
-2) The Python package manager, Pip, should come pre-installed on your system. If it is not, type *sudo apt install pip* and if that doesn't work try one of the following commands: *sudo pacman -S python-pip*, *npm i pip*
-3) Type into your terminal '*git clone https://github.com/rymantheman/musketeer-terminal-2.0*'
-4) A new folder will be created once the previous command finishes. It will be called Musketeer-Terminal-2.0.
-5) open your desired IDE such as VSCode, Atom, Pycharm, etc. (preferably VSCode but any IDE is acceptable).
-6) Find the button that says 'open folder', which is most likely under the 'file' tab.
-7) Open the 'musketeer-terminal-2.0' folder 
-7) You will now have access to all files in the project, in order to be able to run the application, The requirements must be installed.
-8) To install the requirements type *sudo pip install -r requirements.txt*
-9) The correct python-firebase package also needs to be installed. In order to do this, type in '*pip install git+https://github.com/ozgur/python-firebase*'
-10) Make sure the python interpreter and the extensions needed to run python files are installed in your IDE.
-10) At this point everything should be working correctly, navigate to the main.py file and press run. You will see the application come up in a window. This is the exact application that will be on Android phones. Everything should work correctly as long as you have a working internet connection. 
-
-#### Windows:
-1) Download Git Bash [here](https://git-scm.com/download/win)
-2) Run the Git installer and follow the given instructions.
-3) Open your desired IDE (Preferably VSCode).
-4) Navigate to the terminal in the IDE and open a new terminal under 'Git Bash'
-5) In the git bash terminal, type '*git clone https://github.com/rymantheman/musketeer-terminal-2.0*'
-6) Find the 'open folder' button in your IDE and open 'musketeer-terminal-2.0'.
-7) You will now have access to all files in the project, in order to be able to run the application, The requirements must be installed.
-8) To install the requirements type *sudo pip install -r requirements.txt*
+9) If you would like to view the code in an IDE or run the application in a computer window, then follow the instructions below.
 
 ### Requirements to Develop:
 *[Requirements](https://github.com/Rymantheman/Musketeer-Terminal-2.0/blob/main/requirements.txt)*
